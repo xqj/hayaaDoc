@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="1b8fdab3-c841-477a-90b4-40f7b36735e7" name="顶层组件" linkedPackageId="6e8a0a3e-25b3-41ac-b600-f07ca0a22c46" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="0b62e9ff-6ba9-4af9-9a0c-715d75e997bc">
+      <profileInstance Id="595bbb5d-4d13-478e-b921-89ab9a3bf17e" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="14d3ea70-bb77-4c96-ac42-d08492d101b8">
+      <profileInstance Id="7adac782-554e-4427-b98c-244da0b04aa4" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="d10e3c7c-04c3-415f-bd7e-1f6c673f3874" name="持续集成系统" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="94371143-5e4a-420e-bfdc-0458e27bf0b0" />
+        <suppliersInternal>
+          <dependency Id="b8b92510-c0ef-4d86-bd53-42fdefcb56dd">
+            <componentMoniker Id="1a369bd2-70d6-4142-bb40-805108daa45f" LastKnownName="版本存储系统" />
+            <elementDefinition Id="a1807254-7063-4231-b358-891a09b6a633" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="1a369bd2-70d6-4142-bb40-805108daa45f" name="版本存储系统" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="12f9defc-a1bd-4281-b6e3-f629319aa441" />
+        <suppliersInternal>
+          <dependency Id="fe3f3fb6-7f0e-47f6-a9aa-f4dbe7620046">
+            <componentMoniker Id="9f0be488-f5e2-4343-b26a-65bc8033bde0" LastKnownName="系统自感知系统" />
+            <elementDefinition Id="58a3088d-ae22-45a9-91ea-ee3107f4f8f5" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <providedInterface Id="f7bdccb8-94ec-436f-97f1-94ae5df2f155" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="7811406e-c147-4bb1-a851-14ddbfdda2c7" />
+            <type_NamedElement>
+              <interfaceMoniker Id="974e9668-30ae-4cd4-a0a0-62f32f8b9296" LastKnownName="版本提供" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="c583a2d3-edb4-4351-9a96-2032c68d8e1f" name="种子系统" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5e84cee4-fdd7-402c-9053-68b4f120eb1e" />
+        <suppliersInternal>
+          <dependency Id="c35a538c-64a5-4d8a-acea-3e3b19dc2573">
+            <componentMoniker Id="9f0be488-f5e2-4343-b26a-65bc8033bde0" LastKnownName="系统自感知系统" />
+            <elementDefinition Id="aca1ce2a-90d0-498e-bcdf-38e61ac00fa9" />
+          </dependency>
+          <dependency Id="52a5b344-3c8b-41c1-9b06-50ac6ea9894b">
+            <componentMoniker Id="b0bdc46e-f645-41df-862e-de46f05fe548" LastKnownName="业务程序" />
+            <elementDefinition Id="4404a4b0-8ced-405f-ada7-4579b7118c87" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <requiredInterface Id="f9419beb-f24a-458d-8b42-87fe9aab6c85" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="20380db0-46ae-436d-81c8-903f4d76c948" />
+            <suppliersInternal>
+              <dependency Id="4c92abc3-90f7-4ac3-a8cb-1cc9733e33d2">
+                <providedInterfaceMoniker Id="f7bdccb8-94ec-436f-97f1-94ae5df2f155" LastKnownName="Port1" />
+                <elementDefinition Id="3cc21970-9304-4feb-b1f4-d20296df43ed" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="f5fbe437-124c-410a-b342-082fe46ff8a0" LastKnownName="获取版本" />
+            </type_NamedElement>
+          </requiredInterface>
+          <requiredInterface Id="150083a2-c7bd-437b-a41b-9e25c6b46803" name="Port2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="85d77f04-b1d7-4dc4-871b-eff34b1030ef" />
+            <suppliersInternal>
+              <dependency Id="f06a16a1-4d1f-4e55-97e7-1117d1dd8243">
+                <providedInterfaceMoniker Id="0552d03d-04e7-4c82-8efa-5655a0744c7a" LastKnownName="Port1" />
+                <elementDefinition Id="28ccbdf2-d832-428c-a2ee-dafeddc4b68e" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="75414eb3-0348-4a32-b17e-f3e603cceb79" LastKnownName="获取配置" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="974e9668-30ae-4cd4-a0a0-62f32f8b9296" name="版本提供" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="96276421-45ac-4f6d-be31-75d16bb76200" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="f5fbe437-124c-410a-b342-082fe46ff8a0" name="获取版本" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e6d7f734-a074-46de-8055-297325e5a201" />
+      </Interface>
+    </modelContainsNamedElements>
+    <componentModelHasComponents>
+      <component Id="412d5df1-be9d-4cee-870a-4cc4437ea4f5" name="远程配置系统" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="702019b6-a5a1-4e3d-b75e-17ad5fe35c16" />
+        <suppliersInternal>
+          <dependency Id="70154cfb-f71d-4ce2-a7a8-50b51f5a9f13">
+            <componentMoniker Id="9f0be488-f5e2-4343-b26a-65bc8033bde0" LastKnownName="系统自感知系统" />
+            <elementDefinition Id="fc623b40-3c44-4315-9e37-e713f47bf807" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <providedInterface Id="0552d03d-04e7-4c82-8efa-5655a0744c7a" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="f52d54b7-267a-4f60-8e79-56ef1bc27afb" />
+            <type_NamedElement>
+              <interfaceMoniker Id="4e37b779-6554-41ac-acf7-53368c6e5556" LastKnownName="提供程序配置" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="4e37b779-6554-41ac-acf7-53368c6e5556" name="提供程序配置" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e2451ec1-ec08-4d89-a52a-4ef6cd9b1a77" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="75414eb3-0348-4a32-b17e-f3e603cceb79" name="获取配置" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="19f15edc-ea3f-4f13-b392-66a9ec91fd50" />
+      </Interface>
+    </modelContainsNamedElements>
+    <componentModelHasComponents>
+      <component Id="9f0be488-f5e2-4343-b26a-65bc8033bde0" name="系统自感知系统" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c9f9c9c9-bf53-4ad7-9644-2a33ad885f23" />
+        <ownedAttributesInternal>
+          <providedInterface Id="47c27e9b-6d93-43e0-8289-878318c8e268" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="4f92420e-a06b-4b82-8a07-7ba133c25333" />
+            <type_NamedElement>
+              <interfaceMoniker Id="ac86da0b-7aca-4b0e-b7a1-1ac02670c538" LastKnownName="异常探测器" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface Id="866172a2-52b1-4f31-b6ed-1888d49be677" name="Port2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="7abf53a7-1678-4456-a68f-678be51f4641" />
+            <type_NamedElement>
+              <interfaceMoniker Id="6cfaec44-1ade-4403-a6c6-915bb8291c32" LastKnownName="心跳探测器" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface Id="b2b667f0-55f1-4bef-9629-dffaf52b3760" name="Port3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="5f6062dd-b8ee-4060-ab33-e9c296a9804f" />
+            <type_NamedElement>
+              <interfaceMoniker Id="f62c8196-279f-406e-9978-7a693018d2d2" LastKnownName="性能探测器" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="ac86da0b-7aca-4b0e-b7a1-1ac02670c538" name="异常探测器" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="45847451-29d9-4b15-85e5-76e09c827321" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="6cfaec44-1ade-4403-a6c6-915bb8291c32" name="心跳探测器" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="25222b83-5801-4552-8e84-a979ecc6efcd" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="f62c8196-279f-406e-9978-7a693018d2d2" name="性能探测器" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5cf23f99-d0ae-43f8-a8a3-423b0fef8a30" />
+      </Interface>
+    </modelContainsNamedElements>
+    <componentModelHasComponents>
+      <component Id="b401b729-8ee9-4deb-8858-d7caf641d9bc" name="计算资源管理系统" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9b5dd0c0-a54b-4180-82f0-217f2924c978" />
+        <suppliersInternal>
+          <dependency Id="4ea0c270-dba5-46c8-b23f-ff8c13af2452">
+            <componentMoniker Id="7c7578de-a68d-4bb4-94a4-4949050db3f3" LastKnownName="虚拟机以及沙盒系统" />
+            <elementDefinition Id="06275adb-159d-4c90-8feb-c7324739dba3" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="7c7578de-a68d-4bb4-94a4-4949050db3f3" name="虚拟机以及沙盒系统" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="73e189db-1b5b-4ae2-9ca0-0a3411cb064d" />
+        <suppliersInternal>
+          <dependency Id="2ee34748-5bff-4b28-878d-566da56a58e0">
+            <componentMoniker Id="b0bdc46e-f645-41df-862e-de46f05fe548" LastKnownName="业务程序" />
+            <elementDefinition Id="04505762-2107-4724-ae7b-5b5f1ffcf0f0" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="2b28710a-3264-4cf0-809f-fc3b884e47d3" name="运维管控中心系统" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="76e76144-e0a9-4d1e-8e23-305bbe6b18e5" />
+        <suppliersInternal>
+          <dependency Id="b65a9ed1-9154-482c-9f1d-86e4f169968d">
+            <componentMoniker Id="c583a2d3-edb4-4351-9a96-2032c68d8e1f" LastKnownName="种子系统" />
+            <elementDefinition Id="54a623bc-4c6d-4667-a5c8-008369a72677" />
+          </dependency>
+          <dependency Id="331b239e-829f-40fd-ba9e-e607216f7f34">
+            <componentMoniker Id="7c7578de-a68d-4bb4-94a4-4949050db3f3" LastKnownName="虚拟机以及沙盒系统" />
+            <elementDefinition Id="f982e71d-65fe-4c89-b929-7f5fbefa8cb3" />
+          </dependency>
+          <dependency Id="fb969ef1-546a-4e5f-bef5-ba75c1e469fe">
+            <componentMoniker Id="9f0be488-f5e2-4343-b26a-65bc8033bde0" LastKnownName="系统自感知系统" />
+            <elementDefinition Id="b45d3199-ae51-4127-a4a9-83a0f764bc96" />
+          </dependency>
+          <dependency Id="e7ff0b17-6fb2-4756-ae4a-bb17244e07ac">
+            <componentMoniker Id="412d5df1-be9d-4cee-870a-4cc4437ea4f5" LastKnownName="远程配置系统" />
+            <elementDefinition Id="06713ea2-6311-441a-b1bb-5097a7bf4b0a" />
+          </dependency>
+          <dependency Id="440a58b9-1437-4594-b94d-91ca330bb0a0">
+            <componentMoniker Id="1a369bd2-70d6-4142-bb40-805108daa45f" LastKnownName="版本存储系统" />
+            <elementDefinition Id="1ae53944-16bf-46f6-956f-39582fe15998" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="b0bdc46e-f645-41df-862e-de46f05fe548" name="业务程序" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3b15bae0-5fcd-443c-be6c-d05098a7b8fc" />
+      </component>
+    </componentModelHasComponents>
+  </packagedElements>
+  <package Id="6e8a0a3e-25b3-41ac-b600-f07ca0a22c46" name="SystemTopModel">
+    <elementDefinition Id="59665ead-e6b7-4c30-a06a-d460eea492f4" />
+  </package>
+</componentModel>
