@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="af340aed-817f-4dd3-87c7-1beac49dca06" name="UMLUseCaseDiagram1" linkedPackageId="91e81b90-e5a1-44b5-9613-efc1486633d3" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="549f0fbb-c4dd-426c-b1ac-6e6bcb5314ad">
+      <profileInstance Id="d3f49813-4abf-4a7e-a64c-ee23bbd19ea6" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="690e2fe4-a699-40c9-b21d-23a8a5cdc1a9">
+      <profileInstance Id="56274ba3-dbe5-402a-8e95-15a63744e84c" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="34190239-f25d-4dac-89e8-2fbdb4d819a6" name="开发人员" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="60f9040f-2b5a-48c8-9ac6-aee0be701aaa" />
+        <targetEnds>
+          <association Id="cf73cd17-d4ad-4359-b519-fefad8fe3013" isDerived="false" sourceEndRoleName="开发人员" targetEndRoleName="发布代码" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="dab8d100-b9ce-44bf-8f73-ae2441f6ab9f" LastKnownName="发布代码" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="58e5f14e-50fc-4a14-903b-690ed260bf0b" name="开发人员" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0a74e865-f2c7-4e2f-bcd5-dc6b74abf7c1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="17b61c0e-f2f0-47bc-af34-918ab1272db8" name="发布代码" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0c4a5704-f397-4343-8f1e-98edd2f877fb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bbddbb7b-feb5-4437-a63a-d6de71d6ea9d" />
+          </association>
+          <association Id="58c89e8e-fd72-4e53-ae09-1059b2bd6f46" isDerived="false" sourceEndRoleName="开发人员" targetEndRoleName="种子系统部署" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8111dbc1-ffd1-492d-bfa8-28737086edb2" LastKnownName="部署种子" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="42f8d541-2805-4504-8a62-8026bd215954" name="开发人员" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="49c1675c-d853-46b1-9100-c373d0a38dea" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7468991b-bd86-4e83-a7a9-f9d5bdd9385b" name="种子系统部署" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="995f5bca-d908-46ca-b933-db542ec9934e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4e83cd89-80de-4e93-bb19-cfa9ca284be5" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="dab8d100-b9ce-44bf-8f73-ae2441f6ab9f" name="发布代码" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5b5d9f6b-61e5-4071-8034-be08597b5bc9" />
+        <targetEnds>
+          <association Id="ef4d9b9a-8979-47e5-95e3-6c1b7e4992c6" isDerived="false" sourceEndRoleName="发布代码" targetEndRoleName="持续集成系统" isLeaf="false" isAbstract="false">
+            <subsystemMoniker Id="d8545f53-6ed1-4594-9f85-0437f20eef21" LastKnownName="持续集成系统" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9d5f56f3-6fe1-4af5-82af-b96e7a180cb0" name="发布代码" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5e081103-daf2-4b6b-a569-006f2d2c71c4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4bffe631-54ce-42c7-a69e-f6e8717c4b11" name="持续集成系统" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3a5eb766-6440-4831-bbeb-0f93681d0f50" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a6eba6ef-4106-4a95-8b5d-000eca24b20e" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="d8545f53-6ed1-4594-9f85-0437f20eef21" name="持续集成系统" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ddd07dbb-4de1-437e-a254-fb314c06d2ed" />
+        <targetEnds>
+          <association Id="d7625814-4aea-4947-95ec-2e6ace9e3060" isDerived="false" sourceEndRoleName="持续集成系统" targetEndRoleName="版本存储系统" isLeaf="false" isAbstract="false">
+            <artifactMoniker Id="9ffed50c-b299-41b4-b28e-e57026e0ba32" LastKnownName="版本存储系统" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c835d2f0-a8b0-41ec-bc4b-47be2fa348db" name="持续集成系统" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e28e5266-3a70-4d78-af0c-5f544e05873d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="87820267-f2c8-470b-8f56-a75d6ba3839e" name="版本存储系统" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6a9be295-414a-4d16-a12c-79087006fe44" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="dbfad3e4-cc94-45d2-81f2-4f6027cbc157" />
+          </association>
+        </targetEnds>
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <artifact Id="9ffed50c-b299-41b4-b28e-e57026e0ba32" name="版本存储系统" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="05334c45-123c-44e6-82a2-b61264fa9cd1" />
+        <suppliersInternal>
+          <dependency Id="8c3ae14e-3c0d-4c52-b75c-b70bc7828d98">
+            <artifactMoniker Id="f3927cb6-671e-4c25-b3e4-6b1cefa6c523" LastKnownName="感知系统" />
+            <elementDefinition Id="1d289f35-a64e-43f0-bbd5-29ffc97193e0" />
+          </dependency>
+        </suppliersInternal>
+      </artifact>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8111dbc1-ffd1-492d-bfa8-28737086edb2" name="部署种子" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="82efb627-3631-432f-9e45-9909554674a6" />
+        <targetEnds>
+          <association Id="de48cb36-6c56-48ee-8c8f-66389b12a406" isDerived="false" sourceEndRoleName="部署种子" targetEndRoleName="种子系统" isLeaf="false" isAbstract="false">
+            <artifactMoniker Id="fc27bc4d-d827-4388-b5da-c6de739da38f" LastKnownName="种子系统" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e0f4f6f4-e67b-4842-98f6-c6fc4b36a519" name="部署种子" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e0b63696-f34d-49d9-9829-fc4cd188e18e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2bc2222f-a94e-4019-a81d-e0c52ef7c07c" name="种子系统" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3d9ef824-2c43-44b7-8cdf-f5dced0f3329" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7f662afe-3056-4bf3-aa17-1b800eed6703" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <artifact Id="fc27bc4d-d827-4388-b5da-c6de739da38f" name="种子系统" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c83e3d0e-c0fd-4232-bc43-7cd6ca614fc7" />
+        <suppliersInternal>
+          <dependency Id="02a7d0c0-db83-415c-a930-efc65bcd4b28">
+            <artifactMoniker Id="9ffed50c-b299-41b4-b28e-e57026e0ba32" LastKnownName="版本存储系统" />
+            <elementDefinition Id="8573dd34-dde5-4f19-bf4b-8e8c679f19b0" />
+          </dependency>
+          <dependency Id="6f78063b-fd8b-4bdd-9fcb-a03540ce6ed9">
+            <artifactMoniker Id="f3927cb6-671e-4c25-b3e4-6b1cefa6c523" LastKnownName="感知系统" />
+            <elementDefinition Id="c27860bf-bc3a-46e5-a1b1-d599d260d99c" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="5ff0cee0-531b-4a21-8c34-9a2f62b3b711" isDerived="false" sourceEndRoleName="种子系统" targetEndRoleName="自动部署" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="449c9b95-36a4-42e5-9b2e-8c3bd8f24fd0" LastKnownName="自动部署" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="de295d5f-f9f2-4713-a888-d1b2f347f7b0" name="种子系统" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="218d3cbf-e9ca-4a70-8a8a-584050b76867" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9c02af8f-37de-4ace-ba90-e2322e4651c2" name="自动部署" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ac58b435-adb6-4739-9e3c-adb6792f6a62" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="14b694d2-3909-42b4-99b3-9f059267261d" />
+          </association>
+        </targetEnds>
+      </artifact>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <artifact Id="74e87998-cbca-4a3d-9548-ca0fdc3e57bb" name="业务程序" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a3933d99-662a-401c-9804-1c55d638decb" />
+        <suppliersInternal>
+          <dependency Id="8f25fa88-fe19-4eb2-8b07-7e2599a000f9">
+            <artifactMoniker Id="f3927cb6-671e-4c25-b3e4-6b1cefa6c523" LastKnownName="感知系统" />
+            <elementDefinition Id="1de4d69a-ab55-4739-b6b7-2ea0c003663b" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="94922b30-2beb-4c59-83a3-9ef51301d10a" isDerived="false" sourceEndRoleName="业务程序" targetEndRoleName="感知消息通知" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f9ff8606-42f3-4736-ac7b-80005b4b269d" LastKnownName="感知消息通知" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f553812a-91b0-440b-bf87-263dbc4a8402" name="业务程序" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f1fe1dc3-2338-43e2-95d3-5806d9eea1e1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7ccbeb44-c22c-4d41-a97b-fecbbb552ce2" name="感知消息通知" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="61956d5e-9d0e-4fcc-9e70-c4559db7c9d1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0e520ea0-06c7-4cdb-8b5b-076c38df5e12" />
+          </association>
+        </targetEnds>
+      </artifact>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <artifact Id="8dabc89d-7eed-4132-9c8c-a714b1316d88" name="远程配置系统" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="622752c3-1708-4954-b16f-051a1595e0be" />
+        <suppliersInternal>
+          <dependency Id="19119597-1e52-42dc-979d-330cad8e63a6">
+            <artifactMoniker Id="f3927cb6-671e-4c25-b3e4-6b1cefa6c523" LastKnownName="感知系统" />
+            <elementDefinition Id="177e1d0d-c642-4fe5-a4fa-e5e4b7b5aad6" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="efe46a69-1011-4bcd-8250-908ad52468eb" isDerived="false" sourceEndRoleName="远程配置系统" targetEndRoleName="获取配置" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ac9514b1-d772-42d0-9391-bc7ccfdb615c" LastKnownName="获取配置" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0d6cf76f-c8ba-4f35-90bb-3f40866a1408" name="远程配置系统" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b983b27a-719f-41ae-9e99-3d42dd01de78" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4b80f57f-94b9-4c0d-97e0-344be77c7715" name="获取配置" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="86073d8e-2042-455d-9d4a-0a69bb03a830" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e3406666-2961-45e0-910f-6338c44c5fc2" />
+          </association>
+        </targetEnds>
+      </artifact>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ac9514b1-d772-42d0-9391-bc7ccfdb615c" name="获取配置" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ae508f2d-a484-4b19-86cf-ae1d5d4306c1" />
+        <targetEnds>
+          <association Id="8d59b11a-9e40-4b1c-aa5e-3b88618da9ea" isDerived="false" sourceEndRoleName="获取配置" targetEndRoleName="业务程序" isLeaf="false" isAbstract="false">
+            <artifactMoniker Id="74e87998-cbca-4a3d-9548-ca0fdc3e57bb" LastKnownName="业务程序" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f2cb4ebb-d013-4bd5-bb28-6c06c9ed2422" name="获取配置" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="58ac2faa-baad-46b3-a238-a0b9c0904d29" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d92d2f0b-b0f9-41d7-9d0f-cbd603513930" name="业务程序" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="aa9c9932-3714-4acd-83e3-e9efd0ce58fd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="32c4f9eb-4609-4ee9-9988-b38c5b787160" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="449c9b95-36a4-42e5-9b2e-8c3bd8f24fd0" name="自动部署" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ca82d09e-7059-4d20-8449-647d012d3856" />
+        <targetEnds>
+          <association Id="b275d281-270c-4ac6-b523-66eab65a0632" isDerived="false" sourceEndRoleName="自动部署" targetEndRoleName="业务程序" isLeaf="false" isAbstract="false">
+            <artifactMoniker Id="74e87998-cbca-4a3d-9548-ca0fdc3e57bb" LastKnownName="业务程序" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7ac90cb6-9419-465e-86ec-b6048823ab2c" name="自动部署" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9428ad7f-45ba-4b47-a3e9-d900e077dd55" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0af20dc8-49a3-4ee7-86ff-7b26fb786b6b" name="业务程序" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6db4dc1e-34e7-4c4e-a569-82c1534b0267" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ba3d07c0-116b-481f-8c3e-223d2a4d174b" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <artifact Id="f3927cb6-671e-4c25-b3e4-6b1cefa6c523" name="感知系统" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8061ee07-bd43-40a0-b7ad-81b4db784575" />
+      </artifact>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f9ff8606-42f3-4736-ac7b-80005b4b269d" name="感知消息通知" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="69954c2a-389e-4d49-9fc9-d60ebe9cb1ba" />
+        <targetEnds>
+          <association Id="7760a990-723b-4815-879c-419b6e6886ca" isDerived="false" sourceEndRoleName="感知消息通知" targetEndRoleName="感知系统" isLeaf="false" isAbstract="false">
+            <artifactMoniker Id="f3927cb6-671e-4c25-b3e4-6b1cefa6c523" LastKnownName="感知系统" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="93007018-1d80-4f9a-aa70-7d3ca0b5ae71" name="感知消息通知" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="56cd33e0-623d-4bdd-ad21-b46fde28e30f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5685aab8-75b1-4ba6-9990-ef9bcfcf6276" name="感知系统" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5433cb2e-af43-4795-8da5-f2577c29daa9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ded81481-5669-48b9-9d10-10a07948c11f" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="91e81b90-e5a1-44b5-9613-efc1486633d3" name="SystemTopModel">
+    <elementDefinition Id="59665ead-e6b7-4c30-a06a-d460eea492f4" />
+  </package>
+</useCaseModelRoot>
