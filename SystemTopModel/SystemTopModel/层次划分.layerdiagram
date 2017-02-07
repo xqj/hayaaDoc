@@ -27,6 +27,9 @@
             <dependencyFromLayerToLayer Id="239f1020-01d2-4a00-8915-fe6491e70f24" direction="Forward">
               <layerMoniker Id="697d72c2-7b49-46f4-9768-8424242bdda6" />
             </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="e62dc01b-ac88-476f-8b95-1b7a3fc90caa" direction="Forward">
+              <layerMoniker Id="9e22fdea-f8c3-4bc8-bbee-bd3887be596b" />
+            </dependencyFromLayerToLayer>
           </dependencyToLayers>
         </layer>
       </childLayers>
