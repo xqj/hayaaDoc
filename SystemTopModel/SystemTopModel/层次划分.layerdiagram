@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="219da3b9-a0f9-41f3-b79c-157b227beb1f" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="3058f166-c905-4f0b-b9af-48860584c076" name="业务程序">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="f59260d2-ae89-4e4d-9b9d-064bd0d370ce" direction="Forward">
+          <layerMoniker Id="72ea1e3f-6c1a-430f-96de-506a6a18a3d5" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="6174b2bb-5562-41c4-8391-0c46f16a7fa4" name="种子系统">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="9340ffd4-6819-4927-9751-0830392c3b0e" direction="Forward">
+              <layerMoniker Id="387fc6da-f4bb-4278-9b38-6b9796916ad9" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+        <layer Id="9e22fdea-f8c3-4bc8-bbee-bd3887be596b" name="远程配置客户端">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="08281fe0-c65d-4d46-9480-ed629d12ef09" direction="Forward">
+              <layerMoniker Id="083b4472-5fd3-4b94-9ac2-2d8a682ed95e" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+        <layer Id="4ede9993-810f-4eb8-9e8d-cd48c399eb8f" name="感知系统客户端">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="239f1020-01d2-4a00-8915-fe6491e70f24" direction="Forward">
+              <layerMoniker Id="697d72c2-7b49-46f4-9768-8424242bdda6" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+      </childLayers>
+    </layer>
+    <layer Id="387fc6da-f4bb-4278-9b38-6b9796916ad9" name="版本存储系统" />
+    <layer Id="083b4472-5fd3-4b94-9ac2-2d8a682ed95e" name="远程配置发布系统" />
+    <layer Id="697d72c2-7b49-46f4-9768-8424242bdda6" name="感知系统" />
+    <layer Id="72ea1e3f-6c1a-430f-96de-506a6a18a3d5" name="计算资源管理系统" />
+    <layer Id="dd0b42d2-d664-48e0-b4d9-8d268db9f0db" name="运维管理中心">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="c605c1be-13da-49b5-ba4b-a6866209790d" direction="Bidirectional">
+          <layerMoniker Id="387fc6da-f4bb-4278-9b38-6b9796916ad9" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="9b78f974-751b-4337-a1d3-62e3186518a8" direction="Bidirectional">
+          <layerMoniker Id="083b4472-5fd3-4b94-9ac2-2d8a682ed95e" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="f177f269-4d2a-4be1-bbb1-6e3695861c26" direction="Bidirectional">
+          <layerMoniker Id="697d72c2-7b49-46f4-9768-8424242bdda6" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="7a4a0f95-7553-443c-9c24-af6df9d3a7a7" direction="Bidirectional">
+          <layerMoniker Id="72ea1e3f-6c1a-430f-96de-506a6a18a3d5" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+  </layers>
+</layerModel>

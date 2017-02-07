@@ -299,6 +299,52 @@
         </targetEnds>
       </useCase>
     </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <artifact Id="75039835-5864-416d-8366-c2b69fe32f87" name="计算资源管理系统" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f18fe611-5bcc-4805-bcad-3b25a9bb43b0" />
+        <targetEnds>
+          <association Id="62d433ec-ccc0-4f55-8010-04bd6abe193f" isDerived="false" sourceEndRoleName="计算资源管理系统" targetEndRoleName="计算实例分配" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6f69f448-869b-44c3-acc3-a977e64e2b47" LastKnownName="计算实例分配" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b71118bd-6aca-4216-b2c7-a1e941fb0c40" name="计算资源管理系统" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="280c0ece-4178-440e-bfd0-2e3ab8f5ff9e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="566fe0f1-ecb3-4ed2-bab5-1f5ab3f7790a" name="计算实例分配" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="868a47fd-1ffa-4297-bd94-556bcc192e56" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6c1bf616-02eb-4592-a100-171edde173b0" />
+          </association>
+        </targetEnds>
+      </artifact>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6f69f448-869b-44c3-acc3-a977e64e2b47" name="计算实例分配" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c067673c-5717-450b-9a9e-81b40b531836" />
+        <targetEnds>
+          <association Id="7a2158aa-6281-40ce-ae6e-5eb8576cffec" isDerived="false" sourceEndRoleName="计算实例分配" targetEndRoleName="业务程序" isLeaf="false" isAbstract="false">
+            <artifactMoniker Id="74e87998-cbca-4a3d-9548-ca0fdc3e57bb" LastKnownName="业务程序" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cc82426a-0237-4142-aef1-498f0b1aa6c7" name="计算实例分配" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="36786083-3d5c-406b-944d-a6eff6e4600d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8c125dd8-3379-49fb-b284-21f28213e119" name="业务程序" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="96f2d769-6e52-4352-9d5c-6e5b13a11dee" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="46e89a4f-f37e-4984-862a-561c35d0fc82" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
   </packagedElements>
   <package Id="91e81b90-e5a1-44b5-9613-efc1486633d3" name="SystemTopModel">
     <elementDefinition Id="59665ead-e6b7-4c30-a06a-d460eea492f4" />

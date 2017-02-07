@@ -41,4 +41,17 @@
       <SubType>Content</SubType>
     </Content>
   </ItemGroup>
+  <ItemGroup>
+    <Validate Include="层次划分.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="层次划分.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>层次划分.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="层次划分.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>层次划分.layerdiagram</DependentUpon>
+    </Validate>
+  </ItemGroup>
 </Project>
